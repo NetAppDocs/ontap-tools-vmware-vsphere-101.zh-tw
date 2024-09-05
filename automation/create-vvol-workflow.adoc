@@ -1,0 +1,64 @@
+---
+permalink: automation/create-vvol-workflow.html 
+sidebar: sidebar 
+keywords: REST APIs, swagger 
+summary: 工作流程是完成特定管理工作或目標所需的一或多個步驟順序。 
+---
+= 建立 VVols 資料存放區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用新的磁碟區或現有的磁碟區來建立 vVols 資料存放區。您也可以結合現有磁碟區和新磁碟區來建立 vVols 資料存放區。
+
+
+NOTE: 檢查以確保根集合體未對應至 SVM 。
+
+在建立資料存放區之前產生 JWT Token 、或在 vCenter 上將「最大承載 Token 生命週期」設定為 60 公尺、以增加 SAML Token 到期日。
+
+您需要通過 API 的 x-auth 。您可以從 Swagger 中的驗證新增的 API 產生此 x-auth 。
+
+/virtualization / api/v1/aut/vCenter-login
+
+. 使用新的 Volume 建立 vVols 資料存放區。
+
+
+使用 ONTAP REST API 取得 Aggregate id 、 storage _id （ SVM uuid ）。POST /virtualization / api/v1/vCents/cded9ad-6bsd-4c9e-b44G-691250bfe2df/vols/datas存放 區
+
+使用下列 URI 檢查狀態：
+
++
+
+[listing]
+----
+`\https://xx.xx.xx.xxx:8443/virtualization/api/jobmanager/v2/jobs/<JobID>?includeSubJobsAndTasks=true`
+----
++ Request Body for NFS 資料存放區
+
+｛ "name" ： "nfsds1" 、 "protocol" ： "NFS" AFF 、 "platfore_type" ： "more" 、 "moref" ： "domain-C8" 、 "volides" ： [ ｛ "is_exest" ： false 、 "name" ： "vol_NFS_pvt" 、 "size_in_MB" ： 2048000
+
+iSCSI 資料存放區的要求本文： { "name" ： "iscs_ 自 AFF 訂 " 、 "protocol" ： "iscsi" 、 "platform _type" ： "moref" ： "domain-C8" 、 "Volumes" ： [{ "is_existing " ： false 、 "name" ： "iscsiscs_ 自訂 " 、 "size_in_MB" ： 8034使用現有磁碟區建立 VVols 資料存放區。
+
+使用 ONTAP REST API 取得 Aggregal_id 和 volume ID 。
+
+ POST /virtualization/api/v1/vcenters/cdded9ad-6bsd-4c9e-b44g-691250bfe2df/vvols/datastores
+要求主體
+
+....
+ {
+"name" : "nfsds2",
+"protocol" : "nfs",
+"platform_type": "aff",
+"moref" : "domain-c8",
+"volumes" : [
+    {
+          "is_existing": true,
+          "id": "e632a632-1412-11ee-8a8c-00a09860a3ff"
+        }
+],
+"storage_backend": {
+                    "storage_id": "33a8b6b3-10cd-11ee-8a8c-00a09860a3ff"    }
+....
+}

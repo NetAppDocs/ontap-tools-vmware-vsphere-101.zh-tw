@@ -1,0 +1,48 @@
+---
+permalink: automation/manage-threshold-workflow.html 
+sidebar: sidebar 
+keywords: REST APIs, swagger 
+summary: 工作流程是完成特定管理工作或目標所需的一或多個步驟順序。 
+---
+= 管理儲存臨界值
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用下列 Get 臨界值 API 擷取已設定的 Volume 和 Aggregate 儲存臨界值限制。
+
+[listing]
+----
+GET​/virtualization​/api​/v1​/vcenters​/{vcguid}​/storage-thresholds
+----
+範例：依 vCenter Guid 取得每個 vCenter Server 執行個體的儲存臨界值
+
+[listing]
+----
+GET "/api/v1/vcenters/beded9ad-6bbb-4c9e-b4c6-691250bfe2da/storage-thresholds"
+----
+使用下列修補程式設定磁碟區和 Aggregate 的警示、在達到設定的臨界值限制時產生通知。
+
+[listing]
+----
+PATCH​/virtualization​/api​/v1​/vcenters​/{vcguid}​/storage-thresholds
+----
+範例：按 vCenter Guid 更新每個 vCenter 的儲存臨界值。預設上限為 80% （幾乎全滿）、 90% （全滿）。修改所有臨界值設定
+
+[listing]
+----
+{{{}PATCH "/api/v1/vcenters/beded9ad-6bbb-4c9e-b4c6-691250bfe2da/storage-thresholds"
+Request Body
+{
+"volume":
+
+{ "nearly_full_percent": 80, "full_percent": 90 }
+,
+"aggregate": {
+"nearly_full_percent": 80,
+"full_percent": 90
+}
+}{}}}{}
+----

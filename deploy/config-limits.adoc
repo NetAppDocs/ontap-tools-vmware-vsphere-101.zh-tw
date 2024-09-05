@@ -1,0 +1,78 @@
+---
+permalink: deploy/config-limits.html 
+sidebar: sidebar 
+keywords: ONTAP tools,Storage Replication Adapter 
+summary: 部署 VMware vSphere ONTAP 工具的組態限制 
+---
+= 部署 VMware vSphere ONTAP 工具的組態限制
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用下表做為指南、為 VMware vSphere 設定 ONTAP 工具。
+
+|===
+
+
+| *部署* | *類型* | * 虛擬工具數 * | * 主機數 * | * 傳輸協定類型 * 
+
+
+| 輕鬆部署 | 小（ S ） | 約 12 、 000 | 32 | NFS 、 iSCSI 
+
+
+| 輕鬆部署 | 中（ M ） | 約 24 萬 | 64 | NFS 、 iSCSI 
+
+
+| 高可用度 | 小（ S ） | 約 24 萬 | 64 | NFS 、 iSCSI 
+
+
+| 高可用度 | 中（ M ） | 約 50 萬 | 128 | NFS 、 iSCSI 
+
+
+| 高可用度 | 大（ L ） | 約 100k | 256 [ 注意 ] 表格中的主機數量顯示來自多個 vCenter 的主機總數。 | NFS 、 iSCSI 
+|===
+如需每個節點主機系統規模調整需求的詳細link:../deploy/sizing-requirements.html["部署 VMware vSphere ONTAP 工具的必要條件"]資訊、請參閱。
+
+
+
+== 適用於 VMware vSphere 的工具 - 儲存複寫介面卡（ ONTAP ）
+
+下表顯示使用適用於 VMware vSphere 的 ONTAP 工具的每個 SRM 執行個體所支援的數量。
+
+|===
+| * vCenter 部署規模 * | * 小 * | * 中 * 
+
+
+| 使用陣列型複寫設定來保護的虛擬機器總數 | 2000 | 5000 
+
+
+| 陣列型複寫保護群組總數 | 250 | 250 
+
+
+| 每個恢復計畫的保護群組總數 | 50 | 50 
+
+
+| 複寫的資料存放區數量 | 255 | 255 
+
+
+| 虛擬機器數量 | 4000 | 7000 
+|===
+下表顯示適用於 VMware vSphere 部署規模的 SRM 數量和對應的 ONTAP 工具。
+
+|===
+
+
+| * SRM 執行個體數 * | * ONTAP 工具部署規模 * 
+
+
+| 最多 4 個 | 小 
+
+
+| 4 至 8 | 中 
+
+
+| 超過 8 個 | 大 
+|===
+如需詳細資訊、請 https://docs.vmware.com/en/VMware-Live-Recovery/services/vmware-live-site-recovery/GUID-3AD7D565-8A27-450C-8493-7B53F995BB14.html["VMware Live Site Recovery 的營運限制"]參閱。

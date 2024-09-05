@@ -1,0 +1,34 @@
+---
+permalink: automation/onboard-svm-workflow.html 
+sidebar: sidebar 
+keywords: REST APIs, swagger 
+summary: 工作流程是完成特定管理工作或目標所需的一或多個步驟順序。 
+---
+= 內建儲存後端（ SVM 或叢集）與 vCenter Server 執行個體
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用下列 API 將儲存設備後端設定為內建、並將 SVM 對應至本機 vCenter 。請參閱 link:../configure/configure-user-role-and-privileges.html["設定 ONTAP 使用者角色和權限"]ONTAP SVM 使用者 Privileges 一節。
+
+[listing]
+----
+POST /virtualization/api/v1/vcenters/<vcguid>/storage-backends
+
+{
+     "hostname_or_ip": "172.21.103.107",
+     "username": "svm11",
+     "password": "xxxxxx"
+   }
+----
+
+NOTE: 上述 API 回應的 ID 用於探索。
+
+您需要通過 API 的 x-auth 。您可以從 Swagger 中的驗證新增的 API 產生此 x-auth 。
+
+[listing]
+----
+/virtualization/api/v1/auth/vcenter-login
+----

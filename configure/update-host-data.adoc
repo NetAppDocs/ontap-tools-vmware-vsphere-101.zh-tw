@@ -1,0 +1,21 @@
+---
+permalink: configure/update-host-data.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以在 ESXi 主機上執行隨選探索、以取得儲存資料的最新更新。 
+---
+= 更新主機資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在 ESXi 主機上執行隨選探索、以取得儲存資料的最新更新。
+
+*步驟*
+
+. 從 VMware vSphere Web Client 首頁、按一下 * 主機與叢集 * 。
+. 在主機上按一下滑鼠右鍵、然後選取 * NetApp ONTAP tools* > * 更新主機資料 * 。
+. 在 * 更新主機資料 * 快顯視窗中、選取 * 是 * 以重新開始探索所有已連線的儲存系統。
+

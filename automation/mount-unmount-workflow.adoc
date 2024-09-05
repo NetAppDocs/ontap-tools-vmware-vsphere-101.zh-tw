@@ -1,0 +1,68 @@
+---
+permalink: automation/mount-unmount-workflow.html 
+sidebar: sidebar 
+keywords: REST APIs, swagger 
+summary: 您可以將 VMware 虛擬磁碟區（ vVols ）資料存放區掛載到一或多個額外主機、以提供對其他主機的儲存存取。您可以使用 API 卸載 vVols 資料存放區。 
+---
+= 掛載及卸載 vVols 資料存放區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將 VMware 虛擬磁碟區（ vVols ）資料存放區掛載到一或多個額外主機、以提供對其他主機的儲存存取。您可以使用 API 卸載 vVols 資料存放區。
+
+使用下列 API 掛載或卸載 vVols 資料存放區。您需要通過 API 的 x-auth 。您可以從 Swagger 中的驗證新增的 API 產生此 x-auth 。
+
+[listing]
+----
+/virtualization/api/v1/auth/vcenter-login
+----
+[listing]
+----
+PATCH
+/virtualization/api/v1/vcenters/{vcguid}/vvols/datastores/{moref}/hosts
+----
+從 vCenter 取得 vVol 資料存放區更多資訊。
+
+要求主體
+
+[listing]
+----
+{
+  "operation": "mount",
+  "morefs": [
+    "host-7044"
+  ],
+}
+----
+範例： * 裝載於其他主機上
+
+使用下列 API 掛載到其他主機上：
+
+[listing]
+----
+/api/v1/vcenters/cdded9ad-6bsd-4c9e-b44g-691250bfe2df/vvols/datastores/datastore-24/hosts
+
+     Request Body
+     {
+      "operation": "mount",
+      "morefs": ["host-13"],
+     }
+----
+* 在其他主機上卸載
+
+
+使用下列 API 在其他主機上卸載：
+
+[listing]
+----
+/api/v1/vcenters/cdded9ad-6bsd-4c9e-b44g-691250bfe2df/vvols/datastores/datastore-24/hosts
+
+     Request Body
+     {
+      "operation": "unmount",
+      "morefs": ["host-13"],
+     }
+----

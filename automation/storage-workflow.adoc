@@ -1,0 +1,42 @@
+---
+permalink: automation/storage-workflow.html 
+sidebar: sidebar 
+keywords: REST APIs, swagger 
+summary: 工作流程是完成特定管理工作或目標所需的一或多個步驟順序。 
+---
+= 儲存探索
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+探索時間間隔可設定為組態對應的一部分。排程探索每 60 分鐘執行一次。此處提供的 API 是根據需求執行探索、以在本機範圍中新增指定的儲存後端。
+
+使用下列 API 執行探索：
+
+[listing]
+----
+POST
+/virtualization/api/v1/vcenters/{vcguid}/storage-backends/{id}/discovery-jobs
+----
+
+NOTE: 請參閱內建儲存後端（ SVM 或叢集）工作流程、並從儲存後端 API 回應取得 ID 。
+
+只有本機範圍儲存後端才支援從這個 API 端點進行探索、而不支援全域範圍儲存後端。如果儲存後端類型為叢集、則探索會隱含執行子 SVM 。如果儲存後端類型為 SVM 、則探索僅會針對所選 SVM 執行。
+
+範例：
+
+在 ID 指定的儲存後端執行探索
+
+[listing]
+----
+POST
+/api/v1/vcenters/3fa85f64-5717-4562-b3fc-2c963f66afa6/storage-backends/74e85f64-5717-4562-b3fc-2c963f669dde/discovery-jobs
+----
+您需要通過 API 的 x-auth 。您可以從 Swagger 中的驗證新增的 API 產生此 x-auth 。
+
+[listing]
+----
+/virtualization/api/v1/auth/vcenter-login
+----

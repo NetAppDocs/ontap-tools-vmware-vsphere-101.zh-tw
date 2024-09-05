@@ -1,0 +1,32 @@
+---
+permalink: automation/svm-workflow.html 
+sidebar: sidebar 
+keywords: REST APIs, swagger 
+summary: 若要使用 SVM 使用者認證來配置資料存放區、 VMware vSphere 的 ONTAP 工具會在資料存放區 POST API 中指定的集合上建立磁碟區。 
+---
+= SVM Aggregate 對應需求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要使用 SVM 使用者認證來配置資料存放區、 VMware vSphere 的 ONTAP 工具會在資料存放區 POST API 中指定的集合上建立磁碟區。ONTAP 不允許使用 SVM 使用者認證、在 SVM 上的未對應集合體上建立磁碟區。若要解決此問題、請使用 ONTAP REST API 或 CLI 將 SVM 對應至集合體、如此處所述。
+
+ONTAP REST API ：
+
+[listing]
+----
+PATCH "/api/svm/svms/f16f0935-5281-11e8-b94d-005056b46485"
+'{"aggregates":{"name":["aggr1","aggr2","aggr3"]}}'
+----
+ONTAP CLI ：
+
+[listing]
+----
+sti115_vsim_ucs630f_aggr1 vserver show-aggregates
+AvailableVserver Aggregate State Size Type SnapLock
+Type
+svm_test sti115_vsim_ucs630f_aggr1
+online 10.11GB vmdisk non-snaplock
+----

@@ -1,0 +1,35 @@
+---
+permalink: deploy/download-ontap-tools.html 
+sidebar: sidebar 
+keywords:  
+summary: 您可以從 NetApp 支援網站下載適用於 VMware vSphere 的 ONTAP 工具 .ova 檔案。 
+---
+= 下載適用於 VMware vSphere 的 ONTAP 工具
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以 `.zip`從下載包含二進位檔案（ _.ova_ ）和已簽署的 ONTAP 工具 VMware vSphere 憑證的檔案 https://mysupport.netapp.com/site/products/all/details/otv/downloads-tab["NetApp 支援網站"^]。
+
+部署完成後、適用於 VMware vSphere 和 VASA 產品的 ONTAP 工具會安裝在您的環境中。根據預設、 ONTAP 工具 for VMware vSphere 會在您決定部署模式後立即開始運作、並根據您的需求選擇是否啟用 VASA Provider 。如需詳細資訊、請參閱 link:../configure/registration-process.html["向 vCenter Server 執行個體登錄 VASA Provider"] 。
+
+
+
+== 內容庫
+
+VMware 中的內容庫是儲存 VM 範本、 vApp 範本及其他類型檔案的容器物件。使用內容庫進行部署可提供無縫體驗、因為它並不受網路連線能力的限制。
+
+
+NOTE: 您應該將內容庫儲存在共享的資料存放區、這樣叢集中的所有主機都可以存取它。在 HA 組態中部署 OVA 之前、您需要先建立內容庫來儲存 OVA 。使用下列步驟建立內容庫：
+
+*步驟*
+
+. 使用登入 vSphere 用戶端 `\https://vcenterip/ui`
+. 選取 vSphere 用戶端旁的水平省略號、然後選取 * 內容庫 * 。
+. 選取頁面右側的 * 建立 * 。
+. 提供文件庫名稱並建立內容庫。
+. 瀏覽至您建立的內容庫。
+. 選取頁面右側的 * 動作 * 、然後選取 * 匯入項目 * 並匯入 OVA 檔案。
+

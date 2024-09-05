@@ -1,0 +1,55 @@
+---
+permalink: deploy/prepare-deployment.html 
+sidebar: sidebar 
+keywords:  
+summary: 您應該在環境中部署適用於 VMware vSphere 的 ONTAP 工具、並指定必要參數、以便能夠使用該應用裝置。 
+---
+= 準備部署適用於 VMware vSphere 的 ONTAP 工具
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在開始部署適用於 VMware vSphere 的 ONTAP 工具之前、您應該瞭解基本的儲存後端需求、應用程式需求和授權需求。事先規劃部署、並決定您想要如何在環境中設定 VMware vSphere 的 ONTAP 工具。
+
+
+
+== 準備部署
+
+在繼續部署之前、以下是適用於 VMware vSphere 需求的 ONTAP 工具：
+
+. 設定及設定vCenter Server環境。
+. 下載 _.ova_ 檔案。
+. （選用）用於自動化使用者：收集 NetApp 提供的 Postman 集合 JSON 檔案。
+. 用於部署 OVA 的父 vCenter Server 認證。父 vCenter Server 密碼不應包含這些特殊字元（ $ 、 ' 、 " ）
+. 請確定部署 OVA 的主機或資源集區具有本link:../deploy/sizing-requirements.html["部署 VMware vSphere ONTAP 工具的必要條件"]節所述的最低資源。
+. vCenter Server 執行個體的登入認證、 VMware vSphere 的 ONTAP 工具將會連線至部署後進行登錄。
+. 刪除瀏覽器快取。
+. 對於非 HA 部署、您需要三個可用的 IP 位址：負載平衡器一個可用的 IP 位址、 Kubernetes 控制面一個可用的 IP 位址、節點一個 IP 位址。對於 HA 部署、除了這三個 IP 位址、您還需要兩個 IP 位址來處理第二個和第三個節點。指派之前、主機名稱應對應至 DNS 上的可用 IP 位址。所有五個 IP 位址都應位於選擇用於部署的同一個 VLAN 上。
+. 內容庫範本一旦上傳、就不應在部署後刪除、因為它將在重新開機時使用。
+. 在強制使用自訂 CA 憑證的多 vCenter 部署中、將憑證所在的網域名稱對應至虛擬 IP 位址。對網域名稱執行 _nslookup_ 檢查、以檢查網域是否已解析為指定的 IP 位址。應使用負載平衡器 IP 位址的網域名稱和 IP 位址來建立憑證。
+. IPv4/IPv6 支援的 VLAN - 不支援 Pure IPv6 。同時具有 IPv6 和 IPv4 位址的 VLAN 支援混合模式。
+. 提供給 vCenter Server 進行時間同步的 NTP 伺服器。
+. 部署 OVA 之節點或 VM 的靜態 IP 位址組態詳細資料（必填）及其他詳細資料。
++
+.. vCenter Server 主機名稱（部署 OVA 的 vCenter ）
+.. vCenter Server 使用者名稱（部署 OVA 的 vCenter ）
+.. vCenter Server 密碼（部署 OVA 的 vCenter ）
+.. 資源池
+.. 資料 LIF （ IPv4/IPv6 ）
+.. 管理層 LIF
+.. ONTAP 使用者名稱
+.. ONTAP 密碼
+.. SVM 名稱
+.. 傳輸協定
+.. Kubernetes 控制平面的虛擬 IP 位址。
+.. HA / 非 HA 下拉式選單
+.. 主機名稱清單
+.. IP 位址（字串）
+.. 內容庫名稱
+.. OVF 範本名稱
+.. IPv6 閘道（選用）
+
+
+

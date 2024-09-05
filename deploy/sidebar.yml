@@ -1,0 +1,20 @@
+---
+section: deploy
+title: 部署適用於 VMware vSphere 的 ONTAP 工具
+entries:
+- title: 先決條件
+  url: "/deploy/sizing-requirements.html"
+- title: 下載 ONTAP 工具
+  url: "/deploy/download-ontap-tools.html"
+- title: 組態限制
+  url: "/deploy/config-limits.html"
+- title: 準備部署 ONTAP 工具
+  url: "/deploy/prepare-deployment.html"
+- title: 部署非 HA 單節點組態
+  url: "/deploy/nonha-deployment.html"
+- title: 部署 HA 組態
+  url: "/deploy/ha-three-node-deployment.html"
+- title: 針對 VMware vSphere 設定復原您的 ONTAP 工具
+  url: "/deploy/recovery-deployment.html"
+- title: 部署錯誤代碼
+  url: "/deploy/deployment-error-codes.html"

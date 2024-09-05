@@ -1,0 +1,34 @@
+---
+section: automation
+title: 使用REST API自動化
+entries:
+- title: REST API總覽
+  url: "/automation/overview-rest-apis.html"
+- title: 如何存取適用於 VMware vSphere REST API 的 ONTAP 工具
+  url: "/automation/how-to-access-rest-api.html"
+- title: 控制API要求的輸入變數
+  url: "/automation/input-variables-control-an-api-request.html"
+- title: 透過 Swagger UI 存取適用於 VMware vSphere API 的 ONTAP 工具參考文件
+  url: "/automation/how-to-access-rest-api-doc-through-the-swagger-user-interface.html"
+- title: 開始使用REST API
+  url: "/automation/get-started-with-the-rest-api.html"
+- title: 工作流程
+  entries:
+  - title: 儲存探索
+    url: "/automation/storage-workflow.html"
+  - title: SVM Aggregate 對應需求
+    url: "/automation/svm-workflow.html"
+  - title: 內建儲存後端（ SVM 或叢集）與 vCenter Server 執行個體
+    url: "/automation/onboard-svm-workflow.html"
+  - title: 建立 VVols 資料存放區
+    url: "/automation/create-vvol-workflow.html"
+  - title: 掛載及卸載 vVols 資料存放區
+    url: "/automation/mount-unmount-workflow.html"
+  - title: 擴充或縮減 vVol Datastore 的儲存容量
+    url: "/automation/expand-shrink-workflow.html"
+  - title: 刪除 vVols 資料存放區
+    url: "/automation/delete-vvol-workflow.html"
+  - title: 管理儲存臨界值
+    url: "/automation/manage-threshold-workflow.html"
+  - title: 管理網路存取
+    url: "/automation/manage-network-workflows.html"

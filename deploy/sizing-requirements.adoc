@@ -1,0 +1,91 @@
+---
+permalink: deploy/sizing-requirements.html 
+sidebar: sidebar 
+keywords: ONTAP tools,Storage Replication Adapter 
+summary: 在部署適用於 VMware vSphere 的 ONTAP 工具之前、您應該先熟悉部署套件的空間需求、以及一些基本的主機系統需求。 
+---
+= 部署 VMware vSphere ONTAP 工具的必要條件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在部署適用於 VMware vSphere 的 ONTAP 工具之前、您應該先熟悉部署套件的空間需求、以及一些基本的主機系統需求。
+
+您可以搭配 VMware vCenter Server 虛擬應用裝置（ vCSA ）使用適用於 VMware vSphere 的 ONTAP 工具。您應該在支援的 vSphere 用戶端（包括 ESXi 系統）上部署適用於 VMware vSphere 的 ONTAP 工具。
+
+* * 每個節點的安裝套件空間需求 *
++
+** 10 GB 適用於精簡配置的安裝
+** 248 GB 、適用於完整佈建的安裝
+
+
+* * 每個節點的主機系統規模需求 * 根據部署規模和每個節點的建議記憶體如下表所示：
+
+
+|===
+
+
+| * 部署類型 * | * CPU* | * 記憶體（ GB ） * 
+
+
+| 小（ S ） | 8 | 16 
+
+
+| 中（ M ） | 12 | 24 
+
+
+| 大（ L ） | 16 | 32 
+|===
+如link:../deploy/config-limits.html["部署 VMware vSphere ONTAP 工具的組態限制"]需詳細資訊、請參閱。
+
+
+
+== 最低儲存與應用程式需求
+
+|===
+| 儲存設備、主機和應用程式 | 最低版本需求 
+
+
+| ONTAP | ONTAP 9.12.1 、 9.13.1 或 9.14.1 的最新修補程式版本 
+
+
+| ESXi主機 | ESXi 7.0.3 
+
+
+| vCenter 伺服器 | vCenter 7.0U3 
+
+
+| VASA供應商 | 3.0 
+
+
+| ova 應用程式 | 10.1 
+|===
+互通性對照表工具（ IMT ）包含有關支援版本的 ONTAP 、 vCenter Server 、 ESXi 主機和外掛應用程式的最新資訊。
+
+https://imt.netapp.com/matrix/imt.jsp?components=105475;&solution=1777&isHWU&src=IMT["互通性對照表工具"^]
+
+
+
+== 其他部署考量
+
+您應該在自訂 ONTAP 工具部署時、考慮一些需求。
+
+
+
+=== 應用程式使用者密碼
+
+這是指派給系統管理員帳戶的密碼。基於安全考量、建議密碼長度為 8 至 30 個字元、且至少包含一個上方、下方、一位數及一個特殊字元。
+
+
+
+=== 應用裝置維護主控台認證資料
+
+您應該使用「 maint 」使用者名稱來存取維護主控台。您可以在部署期間設定「maint」使用者的密碼。您可以在 vCenter Server 中的 VM 重新啟動期間、使用「重新啟動來賓作業系統」選項來變更密碼。
+
+
+
+=== 應用裝置網路內容
+
+指定有效的 DNS 主機名稱（不合格）、以及 VMware vSphere ONTAP 工具的靜態 IP 位址和其他網路參數。所提供的 IP 位址應可從部署期間所選的 VLAN 網路存取。適用於 VMware vSphere 10.1 版本的 ONTAP 工具不支援 DHCP 。所有這些參數都是正確安裝和操作所需的。

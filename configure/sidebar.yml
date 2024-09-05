@@ -1,0 +1,36 @@
+---
+section: configure
+title: 設定ONTAP VMware工具
+entries:
+- title: ONTAP toolTools Manager 使用者介面
+  url: "/configure/manager-user-interface.html"
+- title: 新增及管理 vCenter Server
+  url: "/configure/add-vcenter.html"
+- title: 將 VASA 提供者登錄至 vCenter Server
+  url: "/configure/registration-process.html"
+- title: 驗證已註冊的 VASA 供應商
+  url: "/configure/verify-registration.html"
+- title: 安裝NFS VAAI外掛程式
+  url: "/configure/install-nfs-vaai-plug-in.html"
+- title: 更新主機資料
+  url: "/configure/update-host-data.html"
+- title: 設定 ESXi 主機設定
+  entries:
+  - title: 設定 ESXi 伺服器多重路徑和逾時設定
+    url: "/configure/configure-esx-server-multipath-and-timeout-settings.html"
+  - title: 設定 ESXi 主機值
+    url: "/configure/esxi-host-values.html"
+- title: 探索儲存系統與主機
+  url: "/configure/discover-storage-systems-and-hosts.html"
+- title: 新增儲存後端
+  url: "/configure/add-storage-backend.html"
+- title: 將儲存後端與 vCenter Server 執行個體建立關聯
+  url: "/configure/associate-storage-backend.html"
+- title: 設定網路存取
+  url: "/configure/configure-network-access.html"
+- title: 設定 ONTAP 使用者角色和權限
+  url: "/configure/configure-user-role-and-privileges.html"
+- title: 適用於 VMware vSphere 外掛程式儀表板的 NetApp ONTAP 工具總覽
+  url: "/configure/dashboard-overview.html"
+- title: 建立資料存放區
+  url: "/configure/create-vvols-datastore.html"

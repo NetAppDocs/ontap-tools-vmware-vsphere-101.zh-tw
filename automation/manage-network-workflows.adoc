@@ -1,0 +1,29 @@
+---
+permalink: automation/manage-network-workflows.html 
+sidebar: sidebar 
+keywords: REST API categories 
+summary: 管理網路存取 
+---
+= 管理網路存取
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用下列 API 新增 IP 位址以進行白名單：
+
+[listing]
+----
+patch /api/v1/vcenters/{vcguid}/settings/ip-whitelist
+
+{
+    value: string
+}
+
+GET /api/v1/vcenters/{vcguid}/settings/ip-whitelist
+
+{
+    value: string
+}
+----

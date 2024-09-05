@@ -1,0 +1,8 @@
+---
+section: upgrade
+title: 升級ONTAP 功能
+entries:
+- title: 升級至ONTAP 最新版的VMware工具
+  url: "/upgrade/upgrade-ontap-tools.html"
+- title: 升級錯誤代碼
+  url: "/upgrade/upgrade-error-codes.html"

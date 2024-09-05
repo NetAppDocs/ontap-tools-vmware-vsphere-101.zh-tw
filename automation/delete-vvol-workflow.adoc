@@ -1,0 +1,53 @@
+---
+permalink: automation/delete-vvol-workflow.html 
+sidebar: sidebar 
+keywords: REST APIs, swagger 
+summary: 工作流程是完成特定管理工作或目標所需的一或多個步驟順序。 
+---
+= 刪除 vVols 資料存放區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+只要FlexVol 資料存放區上至少有一個可用的現象區、就會存在VVols資料存放區。如果您想要刪除 HA 叢集中的 vVols 資料存放區、您應該先從 HA 叢集中的所有主機卸載資料存放區、然後使用 vCenter Server 使用者介面手動刪除駐留的 _.vsphere-hay_ 資料夾。
+
+*步驟*
+
+使用下列 API 刪除 vVols 資料存放區。
+
+[listing]
+----
+DELETE
+​/virtualization​/api​/v1​/vcenters​/{vcguid}​/vvols​/datastores​/{moref}
+----
+範例
+
+* 刪除 vVols 資料存放區、並從儲存區刪除磁碟區
+
+
+[listing]
+----
+  DELETE /api/v1/vcenters/cdded9ad-6bsd-4c9e-b44g-691250bfe2df/vvols/datastores/datastore-28?delete_volumes=true
+----
+
+NOTE: 刪除 vVols 資料存放區工作流程會刪除資料存放區 - Volume （如果您已將 delete_volume ）旗標設為 true 、無論資料存放區 - Volume 是受管理還是未受管理。
+
+* 刪除 vVols 資料存放區、不要從儲存區刪除磁碟區
+
+
+[listing]
+----
+  DELETE /api/v1/vcenters/cdded9ad-6bsd-4c9e-b44g-691250bfe2df/vvols/datastores/datastore-28?delete_volumes=false
+----
+回應：
+
+[listing]
+----
+{
+
+    "id": "1889"
+
+}
+----

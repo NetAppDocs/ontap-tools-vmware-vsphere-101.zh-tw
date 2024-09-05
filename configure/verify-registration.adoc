@@ -1,0 +1,34 @@
+---
+permalink: configure/verify-registration.html 
+sidebar: sidebar 
+keywords:  
+summary: 確認已登入的 SVM 列於 vCenter 用戶端 UI 的 VASA Provider 之下。 
+---
+= 驗證已註冊的 VASA 供應商
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+確認已登入的 VASA 提供者已列於 vCenter 用戶端 UI 的 VASA 提供者和遠端外掛程式 UI 之下。
+
+*步驟*
+
+. 若要從 vCenter 用戶端 UI 驗證 VASA Provider 、請執行下列步驟：
++
+.. 瀏覽至 vCenter Server 。
+.. 使用系統管理員認證登入。
+.. 選擇 * 儲存供應商 * 。
+.. 選擇*設定*。
+.. 在儲存供應商 / 儲存設備後端之下、確認已登入的 VASA 供應商已正確列出。
+
+
+. 若要從遠端外掛程式 UI 驗證 VASA Provider 、請執行下列步驟：
++
+.. 使用登入 vSphere 用戶端 `\https://vcenterip/ui`
+.. 在捷徑頁面中、按一下外掛程式區段下方的 * NetApp ONTAP tools* 。
+.. 您可以在概述頁面和 * 設定 * > * VASA 提供者設定 * 頁面中查看已註冊的 VASA 提供者。
+
+
+

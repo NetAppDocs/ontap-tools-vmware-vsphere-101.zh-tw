@@ -1,0 +1,29 @@
+---
+permalink: automation/how-to-access-rest-api-doc-through-the-swagger-user-interface.html 
+sidebar: sidebar 
+keywords: REST API, Swagger 
+summary: 您可以透過本機 ONTAP 系統上的 Swagger UI 來存取 ONTAP REST API 文件。 
+---
+= 透過 Swagger UI 存取適用於 VMware vSphere API 的 ONTAP 工具參考文件
+:allow-uri-read: 
+
+
+[role="lead"]
+您可以透過本機 ONTAP 系統上的 Swagger UI 來存取 ONTAP REST API 文件。
+
+*開始之前*
+
+您應該擁有下列項目：
+
+* 知識集區管理LIF的IP位址或主機名稱ONTAP
+* 具有存取 ONTAP REST API 權限的帳戶使用者名稱和密碼
+
+
+.步驟
+. 在瀏覽器中鍵入 URL 、然後按 * Enter * ： _\https ： ////docs/API_ <ip_address>
+. 使用 ONTAP 帳戶登入
++
+畫面上會顯示「區域功能API」文件頁面、並在底部以主要資源類別來組織API呼叫。ONTAP
+
+. 如需個別API呼叫的範例、請向下捲動至*叢集*類別、然後按一下* Get /cluster *。
+
