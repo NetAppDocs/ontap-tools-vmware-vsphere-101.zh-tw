@@ -1,0 +1,96 @@
+---
+permalink: release-notes/whats-new-otv-101.html 
+sidebar: sidebar 
+keywords: 'what"s new, release notes, otv, 10.1' 
+summary: 瞭解 OTV 10.1 的新功能。 
+---
+= 適用於 VMware vSphere 10.1 的 ONTAP 工具的新增功能
+:allow-uri-read: 
+
+
+[role="lead"]
+瞭解適用於 VMware vSphere 10.1 的 ONTAP 工具所提供的新功能。
+
+[cols="30%,70%"]
+|===
+| 更新 | 說明 
+
+
+ a| 
+xref:../manage/migrate-standard-virtual-machines-to-vvols-datastores.html[NFS 和 VMFS 資料存放區支援]
+ a| 
+此版本的 ONTAP 工具適用於 VMware vSphere 、可透過 VASA Provider 和 NFS v3 及 VMFS 資料存放區來支援 vVols 資料存放區資源配置。支援建立、調整大小、掛載、卸載及刪除等資料存放區作業。您可以使用 iSCSI 傳輸協定來配置 VMFS 資料存放區。身為 VMware 管理員、您可以從適用於 VMware vSphere 9.xx 的 ONTAP 工具、無縫部署、升級及轉換 iSCSI VMFS 資料存放區至 10.1 版。支援從適用於 VMware vSphere 9.10D2 、 9.11D4 、 9.12 和 9.13 版本的 ONTAP 工具移轉至 10.1 版本。
+
+
+
+ a| 
+xref:../protect/configure-storage-replication-adapter-for-san-environment.html[適用於 NFS 和 VMFS 資料存放區的儲存複寫介面卡（ SRA ）]
+ a| 
+SRA 實作 VMware Site Recovery Manager （ SRM ）規格型災難恢復（ DR ）。對於 NFS 資料存放區、 ONTAP 磁碟區會使用 NFS v3 傳輸協定掛載到 ESXi 主機上。對於 VMFS 資料存放區、 ONTAP LUN 會使用 iSCSI 傳輸協定安裝在 ESXi 主機上。
+
+ONTAP SnapMirror 關係會複寫目的地站台中的磁碟區和 LUN 。SRA 實作從 VMware SRM 叫用的 testFailover 、容錯移轉及重新保護命令。作爲實施的一部分， SRA 確保在恢復事件中所有卷和 LUN 都可安裝在目的地上，並讀取輔助站點卷和 LUN 以避免數據差異。
+
+
+
+ a| 
+xref:../configure/dashboard-overview.html[豐富的 vCenter 使用者介面（ UI ）整合支援所有工作流程]
+ a| 
+適用於 VMware vSphere 10.1 的 ONTAP 工具提供工作流程的圖形化使用者介面、可與適用於 VMware vSphere 9.xx 版本的 ONTAP 工具取得同位元。遠端外掛程式支援：
+
+* xref:../manage/migrate-standard-virtual-machines-to-vvols-datastores.html[NFS 、 VMFS 和 vVols 資料存放區的觀察與監控]
+* xref:../protect/configure-storage-replication-adapter-for-san-environment.html[適用於 NFS 和 VMFS 資料存放區的儲存複寫介面卡]
+* xref:../configure/registration-process.html[Vasa 供應商註冊與取消註冊]
+* xref:../configure/install-nfs-vaai-plug-in.html[VAAI 外掛程式安裝]
+* xref:../manage/collect-the-log-files.html[所選 vCenter 的記錄套件下載]
+
+
+
+
+ a| 
+xref:../deploy/nonha-deployment.html[易於部署的變體支援]
+ a| 
+您可以快速內建適用於 VMware vSphere 10.1 的 ONTAP 工具、並使用簡易部署選項來體驗其功能。簡單部署即可支援快照式還原。
+
+
+
+ a| 
+xref:../configure/manager-user-interface.html[適用於所有 ONTAP 工具管理工作流程的 ONTAP Tools Manager UI]
+ a| 
+ONTAP 工具管理程式可讓 ONTAP 工具管理員更好地控制託管的 vCenter 執行個體和已建立的儲存後端。ONTAP 工具管理程式可協助：
+
+* vCenter 管理 - 將 vCenter 執行個體新增及管理至適用於 VMware vSphere 的 ONTAP 工具。
+* 儲存後端管理：將 ONTAP 儲存叢集新增及管理至適用於 VMware vSphere 的 ONTAP 工具、並將其對應至全球已登入的 vCenter 執行個體。
+* 記錄套件下載：收集適用於 VMware vSphere 的 ONTAP 工具記錄檔。
+* 憑證管理 - 將自我簽署的憑證變更為自訂 CA 憑證、並更新或重新整理所有憑證。
+* 密碼管理 - 重設使用者的 OVA 應用程式密碼。
+
+
+
+
+ a| 
+xref:../manage/certificate-manage.html[憑證管理]
+ a| 
+適用於 VMware vSphere 的單一 ONTAP 工具執行個體可管理多個 vCenter 執行個體。當您部署適用於 VMware vSphere 的 ONTAP 工具時、會依預設將自我簽署憑證指派給所有 vCenter 執行個體。當您管理多個 vCenter 執行個體、且想要在多個 vCenter 執行個體上啟用 vVols 功能時、必須使用 ONTAP 工具管理員介面將自我簽署的憑證變更為自訂 CA 憑證。您可以使用相同的介面來更新或重新整理所有憑證。
+
+
+
+ a| 
+xref:../concepts/ontap-tools-concepts-terms.html[零恢復點目標（ RPO ）恢復]
+ a| 
+如果您遺失用於 VMware vSphere 設定的 ONTAP 工具、您可以使用 ONTAP 資料管理軟體來恢復 ONTAP 工具設定、而不會遺失任何資料。不支援零 RPO 恢復、以提供簡易的部署選項。
+
+
+
+ a| 
+支援部署的 iSCSI 傳輸協定
+ a| 
+Trident 支援 NFS 和 iSCSI 傳輸協定來配置持續性磁碟區。在部署適用於 VMware vSphere 的 ONTAP 工具時、您可以使用 iSCSI 傳輸協定、將 VASA 提供者服務資料儲存在永久性磁碟區中。
+
+
+
+ a| 
+支援 IPv6 位址、以利儲存和 vCenter 登入
+ a| 
+您可以使用 IPv4 位址、 IPv6 位址或完整網域名稱（ FQDN ）、將儲存設備封底。儲存服務和儲存 Proxy 服務會使用具有相同 IPv4 或 IPv6 位址的已登入認證、與 ONTAP REST API 通訊。使用匯出原則規則的 IPv4 位址、 IPv6 位址或 FQDN 可支援資料路徑。
+
+|===
