@@ -6,5 +6,5 @@ entries:
   url: "/release-notes/release-notes.html"
 - title: 適用於 VMware vSphere 10.1 的 ONTAP 工具的新功能
   url: "/release-notes/whats-new-otv-101.html"
-- title: OTV 9 和 OTV 10 功能比較
-  url: "/release-notes/otv-9-otv10-feature-comparison.html"
+- title: ONTAP 工具 9 和 ONTAP 工具 10 的功能比較
+  url: "/release-notes/ontap-tools-9-ontap-tools-10-feature-comparison.html"

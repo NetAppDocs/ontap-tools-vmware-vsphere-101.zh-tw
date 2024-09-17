@@ -1,17 +1,17 @@
 ---
-permalink: release-notes/otv-9-otv10-feature-comparison.html 
+permalink: release-notes/ontap-tools-9-ontap-tools-10-feature-comparison.html 
 sidebar: sidebar 
 keywords: release notes, feature, comparison 
-summary: 瞭解 OTV 9 和 OTV 10 功能比較 
+summary: 瞭解適用於 VMware vSphere 9 的 ONTAP 工具和適用於 VMware vSphere 10 的 ONTAP 工具功能比較 
 ---
-= OTV 9 和 OTV 10 功能比較
+= 適用於 VMware vSphere 9 的 ONTAP 工具和適用於 VMware vSphere 10 的 ONTAP 工具功能比較
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-瞭解從 OTV 9 移轉至 OTV 10.1 是否適合您。如需最新的相容性資訊，請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
+瞭解從適用於 VMware vSphere 9 的 ONTAP 工具移轉至適用於 VMware vSphere 10.1 的 ONTAP 工具是否適合您。如需最新的相容性資訊，請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
 
 [cols="20%,40%,40%"]
 |===
@@ -24,10 +24,10 @@ summary: 瞭解 OTV 9 和 OTV 10 功能比較
 | ONTAP 發行資格 | ONTAP 9 ． 9.1 至 ONTAP 9 ． 15.1 | ONTAP 9 。 12.1 至 ONTAP 9 。 14.1 
 
 
-| VMware 版本支援 | vSphere 7.x-8.x SRM 8.5-9.0 | vSphere 7.x-8.x SRM 8.7-9.0 
+| VMware 版本支援 | vSphere 7.x-8.x VMware Site Recovery Manager (SRM) 8.5 到 VMware Live Site Recovery 9.0 | vSphere 7.x-8.x VMware Site Recovery Manager (SRM) 8.7 升級到 VMware Live Site Recovery 9.0 
 
 
-| 傳輸協定支援 | 傳統資料存放區： NFS （ v3 和 v4.1 ）、 VMFS （ iSCSI 和 FCP ） vVols ： iSCSI 、 FCP 、 NVMe / FC 、 NFS v3 | 傳統資料存放區： NFS （ v3 和 v4.1 ）、 VMFS （ iSCSI ） vVols ： iSCSI 、 NFS v3 
+| 傳輸協定支援 | NFS 和 VMFS 資料存放區： NFS （ v3 和 v4.1 ）、 VMFS （ iSCSI 和 FCP ） vVols 資料存放區： iSCSI 、 FCP 、 NVMe / FC 、 NFS v3 | NFS 和 VMFS 資料存放區： NFS （ v3 和 v4.1 ）、 VMFS （ iSCSI ） vVols 資料存放區： iSCSI 、 NFS v3 
 
 
 | 擴充性 | 主機與 VM ： 300 台主機、最多 10K VM 資料存放區： 600 NFS 、最多 50 個 VMFS 、最多 250 個 vVols vVols ：最多 14K | 主機與 VM ： 600 部主機 vVols ：最高 140K 

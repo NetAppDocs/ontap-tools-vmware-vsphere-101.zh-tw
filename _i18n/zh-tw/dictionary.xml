@@ -1746,10 +1746,7 @@
   <block id="a239701adb72159a71164b036c18a53a" category="sidebar">設定受保護和恢復站台資源</block>
   <block id="6956cfc9382ccb41c8ac57f99255b409" category="sidebar">驗證複寫的儲存系統</block>
   <block id="a2fa58344be7fbd9a2be0320a8df0f77" category="sidebar">升級ONTAP 功能</block>
-  <block id="45c0cb8a573040ec3a3c91b49388ce77" category="summary">瞭解 OTV 9 和 OTV 10 功能比較</block>
-  <block id="bec34363c22ae7f416bb150033204752" category="doc">OTV 9 和 OTV 10 功能比較</block>
   <block id="9ed4a475dd3705157a9fed8811f63ce2" category="inline-link">NetApp 互通性對照表工具</block>
-  <block id="7bbd8ba71af073421f64a911c595d804" category="paragraph">瞭解從 OTV 9 移轉至 OTV 10.1 是否適合您。如需最新的相容性資訊，請參閱<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block>。</block>
   <block id="21021ea0e52be8e9c599f4dff41e5be0" category="cell">功能</block>
   <block id="e2e5efdc8b340ced50733afbe15a4fad" category="cell">ONTAP 工具 9.13.</block>
   <block id="ec00f002c530dcfbc3a0e06a58d47937" category="cell">ONTAP 工具 10.1</block>
@@ -1760,11 +1757,7 @@
   <block id="f69940d2c889c5ba58609514e4ec4bff" category="cell">ONTAP 9 ． 9.1 至 ONTAP 9 ． 15.1</block>
   <block id="d4dcb3d0be17e55a6784a2f961f93bc2" category="cell">ONTAP 9 。 12.1 至 ONTAP 9 。 14.1</block>
   <block id="d67ece44624c7aa69b0f38715d1ac2fb" category="cell">VMware 版本支援</block>
-  <block id="e14179d4b312d9cfca14436389327be5" category="cell">vSphere 7.x-8.x SRM 8.5-9.0</block>
-  <block id="bcfc58d0493001a6860f0cd2b68840b3" category="cell">vSphere 7.x-8.x SRM 8.7-9.0</block>
   <block id="30388d1a3ab1a01f6930553a577eb80b" category="cell">傳輸協定支援</block>
-  <block id="d5ff81a2866c816e348cdd6f08ed39e4" category="cell">傳統資料存放區： NFS （ v3 和 v4.1 ）、 VMFS （ iSCSI 和 FCP ） vVols ： iSCSI 、 FCP 、 NVMe / FC 、 NFS v3</block>
-  <block id="ef79cc3ec55f1ee802c8bef4053dfebe" category="cell">傳統資料存放區： NFS （ v3 和 v4.1 ）、 VMFS （ iSCSI ） vVols ： iSCSI 、 NFS v3</block>
   <block id="2d215ebfc0280f8163d071454ec7ce01" category="cell">擴充性</block>
   <block id="250a44c4a8c52c86430d21b997042d19" category="cell">主機與 VM ： 300 台主機、最多 10K VM 資料存放區： 600 NFS 、最多 50 個 VMFS 、最多 250 個 vVols vVols ：最多 14K</block>
   <block id="e9ecfce2c9d4f4584ac79acfbd1b505a" category="cell">主機與 VM ： 600 部主機 vVols ：最高 140K</block>
@@ -1777,9 +1770,7 @@
   <block id="705b94fd1b511a1c9c06a21279f92615" category="paragraph">瞭解適用於 VMware vSphere 10.1 的 ONTAP 工具所提供的全新增強功能。</block>
   <block id="6157debca7d3f3948f1725114e76924b" category="inline-xref-macro">適用於 VMware vSphere 10.1 的 ONTAP 工具的新功能</block>
   <block id="8ad73d2923c566307bb64baa5d027f1e" category="paragraph">如需新功能與增強功能的完整清單，請參閱<block ref="ec6dda21da143161509af94ddcaf0c28" category="inline-xref-macro-rx"></block>。</block>
-  <block id="bcc22b06b618a9db830b76770830c578" category="paragraph">若要深入瞭解從適用於 VMware vSphere 9 的 ONTAP 工具移轉至 ONTAP 工具 10.1 是否適合您的部署、請參閱<block ref="d850f8a270263c8f340a6395269dd624" category="inline-xref-macro-rx"></block>。支援從適用於 VMware vSphere 9.10D2 、 9.11D4 、 9.12 和 9.13 版本的 ONTAP 工具移轉至 ONTAP 工具 10.1 。</block>
   <block id="7c9c963f9e315e09a32dfb79b88d92b8" category="paragraph">有關適用於 VMware vSphere 10.1 的 ONTAP 工具的已知問題和限制的詳細信息，請參閱<block ref="82f186bdee145660ad8025b64bc47ede" category="inline-link-rx"></block>。您必須使用 NetApp 帳戶登入、或建立帳戶才能存取版本資訊。</block>
-  <block id="e5af075103bba1e5e194c9d0c74f1e1f" category="summary">瞭解 OTV 10.1 的新功能。</block>
   <block id="246423e206dcb100415831177697c50a" category="doc">適用於 VMware vSphere 10.1 的 ONTAP 工具的新增功能</block>
   <block id="8531963bc35662f1a07cf43203d718fe" category="paragraph">瞭解適用於 VMware vSphere 10.1 的 ONTAP 工具所提供的新功能。</block>
   <block id="06933067aafd48425d67bcb01bba5cb6" category="cell">更新</block>
@@ -1823,4 +1814,13 @@
   <block id="3e68f004e881d64eee5503230989baef" category="paragraph">支援 IPv6 位址、以利儲存和 vCenter 登入</block>
   <block id="21a0626546cb66a4a2685b4121ca68a2" category="paragraph">您可以使用 IPv4 位址、 IPv6 位址或完整網域名稱（ FQDN ）、將儲存設備封底。儲存服務和儲存 Proxy 服務會使用具有相同 IPv4 或 IPv6 位址的已登入認證、與 ONTAP REST API 通訊。使用匯出原則規則的 IPv4 位址、 IPv6 位址或 FQDN 可支援資料路徑。</block>
   <block id="5dd03e8d039863e563e049be198c3fd3" category="sidebar">版本資訊</block>
+  <block id="7cf21d459cdbb9c2a1e4864da9f56b5a" category="summary">瞭解適用於 VMware vSphere 9 的 ONTAP 工具和適用於 VMware vSphere 10 的 ONTAP 工具功能比較</block>
+  <block id="8db6f8bda67c3085df85aeea7d620ac7" category="doc">適用於 VMware vSphere 9 的 ONTAP 工具和適用於 VMware vSphere 10 的 ONTAP 工具功能比較</block>
+  <block id="46593fa664efb28c6d0dbcda3cacd798" category="paragraph">瞭解從適用於 VMware vSphere 9 的 ONTAP 工具移轉至適用於 VMware vSphere 10.1 的 ONTAP 工具是否適合您。如需最新的相容性資訊，請參閱<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block>。</block>
+  <block id="af0223f5c63fe0b5a6e75d3087868abd" category="cell">vSphere 7.x-8.x VMware Site Recovery Manager (SRM) 8.5 到 VMware Live Site Recovery 9.0</block>
+  <block id="170ea24c94c478abd1871386c2d1ec72" category="cell">vSphere 7.x-8.x VMware Site Recovery Manager (SRM) 8.7 升級到 VMware Live Site Recovery 9.0</block>
+  <block id="e810af0cb36135a5b8e6f2da4440d6cb" category="cell">NFS 和 VMFS 資料存放區： NFS （ v3 和 v4.1 ）、 VMFS （ iSCSI 和 FCP ） vVols 資料存放區： iSCSI 、 FCP 、 NVMe / FC 、 NFS v3</block>
+  <block id="8bc8491da19ddf762b07de3144d61829" category="cell">NFS 和 VMFS 資料存放區： NFS （ v3 和 v4.1 ）、 VMFS （ iSCSI ） vVols 資料存放區： iSCSI 、 NFS v3</block>
+  <block id="9f309a586570bbc1fff689704b3dad01" category="paragraph">若要深入瞭解從適用於 VMware vSphere 9 的 ONTAP 工具移轉至 ONTAP 工具 10.1 是否適合您的部署<block ref="947428ca1064f8d19137fb8976698998" category="inline-xref-macro-rx"></block>、請參閱。支援從適用於 VMware vSphere 9.10D2 、 9.11D4 、 9.12 和 9.13 版本的 ONTAP 工具移轉至 ONTAP 工具 10.1 。</block>
+  <block id="ed8359854c43609fca7bc8a46cca9eac" category="sidebar">ONTAP 工具 9 和 ONTAP 工具 10 的功能比較</block>
 </blocks>

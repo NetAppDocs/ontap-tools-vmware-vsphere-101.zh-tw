@@ -1,8 +1,8 @@
 ---
 permalink: release-notes/whats-new-otv-101.html 
 sidebar: sidebar 
-keywords: 'what"s new, release notes, otv, 10.1' 
-summary: 瞭解 OTV 10.1 的新功能。 
+keywords: 'what"s new, release notes, otv, 10.1, ONTAP tools for VMware vSphere' 
+summary: 瞭解適用於 VMware vSphere 10.1 的 ONTAP 工具所提供的新功能。 
 ---
 = 適用於 VMware vSphere 10.1 的 ONTAP 工具的新增功能
 :allow-uri-read: 
