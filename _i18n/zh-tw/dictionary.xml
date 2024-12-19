@@ -1823,4 +1823,6 @@
   <block id="8bc8491da19ddf762b07de3144d61829" category="cell">NFS 和 VMFS 資料存放區： NFS （ v3 和 v4.1 ）、 VMFS （ iSCSI ） vVols 資料存放區： iSCSI 、 NFS v3</block>
   <block id="9f309a586570bbc1fff689704b3dad01" category="paragraph">若要深入瞭解從適用於 VMware vSphere 9 的 ONTAP 工具移轉至 ONTAP 工具 10.1 是否適合您的部署<block ref="947428ca1064f8d19137fb8976698998" category="inline-xref-macro-rx"></block>、請參閱。支援從適用於 VMware vSphere 9.10D2 、 9.11D4 、 9.12 和 9.13 版本的 ONTAP 工具移轉至 ONTAP 工具 10.1 。</block>
   <block id="ed8359854c43609fca7bc8a46cca9eac" category="sidebar">ONTAP 工具 9 和 ONTAP 工具 10 的功能比較</block>
+  <block id="f6e2644fce556a8207829c90c0760e9e" category="inline-link">非 HA 進階和 HA 組態的先決條件</block>
+  <block id="1194197b73e30573b06eeec54d3ca76d" category="list-text">在非 HA 高級和 HA 配置中安裝用於 VMware vSphere 10.1 的 ONTAP 工具之前，請查看知識庫文章：<block ref="e4dee65de4069a83bb14c7c7d5ee3ead" category="inline-link-rx"></block>。</block>
 </blocks>

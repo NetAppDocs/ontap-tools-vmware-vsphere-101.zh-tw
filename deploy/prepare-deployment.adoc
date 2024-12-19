@@ -52,4 +52,5 @@ summary: 您應該在環境中部署適用於 VMware vSphere 的 ONTAP 工具、
 .. IPv6 閘道（選用）
 
 
+. 在非 HA 高級和 HA 配置中安裝用於 VMware vSphere 10.1 的 ONTAP 工具之前，請查看知識庫文章： https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/pre-requisites_for_installing_OTV_10.1_and_10.2_in_NonHA_Advanced_and_HA["非 HA 進階和 HA 組態的先決條件"]。
 
