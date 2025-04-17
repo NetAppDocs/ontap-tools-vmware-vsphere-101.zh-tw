@@ -1699,7 +1699,6 @@
   <block id="3f50e7c6b4d426580688c6da56153793" category="list-text">憑證升級</block>
   <block id="ef68cd44177b6a31df6410ebc4f7c5e1" category="list-text">遠端外掛程式升級</block>
   <block id="8f7be3c874feb6ef0fd5f20afd8d5fbb" category="sidebar">VMware vSphere的支援工具可讓您在vCenter Server環境中設定、管理及保護虛擬資料存放區。ONTAP</block>
-  <block id="26ffc687a7267f96a389530199971cd1" category="sidebar">適用於 VMware vSphere 的 ONTAP 工具文件</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始使用</block>
   <block id="da951ef1610be90b45b31baf7b25b179" category="sidebar">深入瞭ONTAP 解VMware vSphere的各種功能</block>
   <block id="2a03ee5b0887b8a6bf23fd52456544db" category="sidebar">部署適用於 VMware vSphere 的 ONTAP 工具</block>
@@ -1825,4 +1824,5 @@
   <block id="ed8359854c43609fca7bc8a46cca9eac" category="sidebar">ONTAP 工具 9 和 ONTAP 工具 10 的功能比較</block>
   <block id="f6e2644fce556a8207829c90c0760e9e" category="inline-link">非 HA 進階和 HA 組態的先決條件</block>
   <block id="1194197b73e30573b06eeec54d3ca76d" category="list-text">在非 HA 高級和 HA 配置中安裝用於 VMware vSphere 10.1 的 ONTAP 工具之前，請查看知識庫文章：<block ref="e4dee65de4069a83bb14c7c7d5ee3ead" category="inline-link-rx"></block>。</block>
+  <block id="a62e9d532f8887c09395a1edc29c465f" category="sidebar">適用於 VMware vSphere 10.1 的 ONTAP 工具文件</block>
 </blocks>

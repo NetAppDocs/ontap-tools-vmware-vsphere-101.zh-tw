@@ -1,6 +1,6 @@
 ---
 indexpage:
-  title: 適用於 VMware vSphere 的 ONTAP 工具文件
+  title: 適用於 VMware vSphere 10.1 的 ONTAP 工具文件
   lead: VMware vSphere的支援工具可讓您在vCenter Server環境中設定、管理及保護虛擬資料存放區。ONTAP
   tiles:
   - title: 開始使用
